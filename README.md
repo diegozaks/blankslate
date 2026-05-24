@@ -1,14 +1,10 @@
 # blank slate
 
-a private journaling app. 20 minutes a day, then it's gone.
+This is a simple, private expressive journaling app.
 
-nothing gets saved -- not to disk, not to the cloud, not to your clipboard. text only lives in memory while you're writing.
+Write for 20 minutes per day, at the end of the 20 minutes everything is wiped. None of the writing is saved, not to disk, not to the cloud, not to your clipboard, not even screenshots.
 
-at 0:00 everything wipes. screenshots come back black, screen sharing too. no copy, no paste, no select -- you can only type forward, or backspace one character at a time.
-
-write like nobody's reading. because nobody is, including you. let your thoughts roam. say the thing you wouldn't say anywhere else.
-
-a kind of meditation. 20 minutes, then a blank slate.
+This writing is meant to disappear.
 
 ## commands
 
