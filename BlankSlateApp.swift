@@ -421,11 +421,13 @@ struct AboutPanel: View {
     }
 
     private let aboutText = """
-    This is a simple, private expressive journaling app.
+    This is a simple expressive journaling app.
 
-    Write for 20 minutes per day, at the end of the 20 minutes everything is wiped. None of the writing is saved, not to disk, not to the cloud, not to your clipboard, not even screenshots.
+    Write for 20 minutes per day, at the end of the 20 minutes everything is wiped. Your writing is not saved, not to disk, not to the cloud, not to your clipboard, not even screenshots.
 
     This writing is meant to disappear.
+
+    Built by Diego, released under MIT license.
     """
 
     var body: some View {
