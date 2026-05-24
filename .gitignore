@@ -1,5 +1,8 @@
 BlankSlate.app/
 AppIcon.iconset/
 icon-source.png
+BlankSlate-*.zip
 .DS_Store
 *.swp
+CLAUDE.md
+.claude/
