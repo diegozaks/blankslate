@@ -60,10 +60,10 @@ enum Theme {
 }
 
 struct TypeSettings: Equatable, Codable {
-    var fontSize: CGFloat = 17
-    var kerning: CGFloat = -0.5
-    var leading: CGFloat = 0
-    var lineHeight: CGFloat = 1.2
+    var fontSize: CGFloat = 16
+    var kerning: CGFloat = -0.1
+    var leading: CGFloat = 6
+    var lineHeight: CGFloat = 1.04
 }
 
 enum Persisted {
@@ -342,6 +342,24 @@ struct SettingsPanel: View {
             DialRow(label: "Kerning",   value: $settings.kerning,  range: -2...2,  format: "%.1f")
             DialRow(label: "Leading",   value: $settings.leading,  range: 0...16,  format: "%.0f")
             DialRow(label: "Line Height", value: $settings.lineHeight, range: 0.9...2.0, format: "%.2f")
+
+            Button(action: { settings = TypeSettings() }) {
+                HStack {
+                    Text("reset to default")
+                        .font(.system(size: 12, design: .monospaced))
+                        .foregroundColor(.white.opacity(0.55))
+                    Spacer()
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(Color.white.opacity(0.06))
+                )
+            }
+            .buttonStyle(.plain)
+            .padding(.top, 4)
         }
         .padding(12)
         .background(
